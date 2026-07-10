@@ -1,10 +1,11 @@
-function Student(props){
-    return (
-        <div>
-            <h2>Name: {props.name}</h2>
-            <h3>Age: {props.age}</h3>
-        </div>
-    );
+function Student({ name, age, city }) {
+  return (
+    <div>
+      <h2>Name: {name}</h2>
+      <p>Age: {age}</p>
+      <p>City: {city}</p>
+    </div>
+  );
 }
 
 export default Student;
