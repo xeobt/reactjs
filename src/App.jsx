@@ -1,0 +1,26 @@
+import Layout from "./Layout"
+
+function App() {
+
+  return (
+    <>
+      <div>
+        <Layout
+        title="Welcome"
+        description="This is home page"
+        />
+
+        <Layout
+        title="About Us"
+        description="Learn more about our company"
+        />
+
+        <Layout
+        title="Contact"
+        description="Get in touch with us"
+        />
+      </div>
+    </>
+  );
+}
+export default App
