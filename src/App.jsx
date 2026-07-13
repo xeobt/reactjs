@@ -1,10 +1,13 @@
 function App() {
-  const students = ["Rahim", "Karim", "Jamal"];
+  const students = ["Rahim", "Karim", "Jamal", "Sakib", "Basan", "Rafil", "ghgdd"];
+
+  const showStudent = ["Rahim","Basan"]
 
   return (
     <div>
-      {students.map((student) => (
-      <h2>{student}</h2>
+      {students.filter((student) => showStudent.includes(student))
+      .map((student, index) => (
+      <h2 key={index}>{student}</h2>
       ))}
     </div>
   )
