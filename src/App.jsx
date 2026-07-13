@@ -1,31 +1,11 @@
+import StudentList from "./StudentList"
+
 function App() {
-  const students = [
-    {
-      name: "Rahim",
-      age: 20,
-      city: "Dhaka"
-    },
-    {
-      name: "Karim",
-      age: 22,
-      city: "Chittagong"
-    },
-    {
-      name: "Jamal",
-      age: 21,
-      city: "Khulna"
-    }
-  ]
+  const students = ["Rahim", "Karim", "Jamal"];
 
   return (
     <div>
-      {students.map((student, index) => (
-      <div key={index}>
-        <h2>{student.name}</h2>
-        <p>Age: {student.age}</p>
-        <p>City: {student.city}</p>
-      </div>
-      ))}
+      <StudentList students={students} />
     </div>
   )
 }
