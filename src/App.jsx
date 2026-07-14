@@ -1,17 +1,17 @@
 import { useState } from "react";
 
 function App() {
-  function handleSubmit(){
-    event.preventDefault();
-    alert("Form Submitted");
-  }
-
+  const [text, setText] = useState("");
   return (
-    <form>
-      <input type="text" placeholder="name" />
-      <button type="submit">Submit</button>
-    </form>
+  <div>
+    <input
+    type="text"
+    onChange={(e) => setText (e.target.value)}
+    />
+    <h2>{text}</h2>
+    <p>Characters: {text.length}</p>
+  </div>
   );
 }
 
-export default App;
+export default App
