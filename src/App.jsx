@@ -1,12 +1,16 @@
 import { useState } from "react";
 
 function App() {
-  const [liked, setLiked] = useState(false);
+  function handleSubmit(){
+    event.preventDefault();
+    alert("Form Submitted");
+  }
 
   return (
-    <button onClick={() => setLiked(!liked)}>
-      {liked ? "Liked" : "Like"}
-    </button>
+    <form>
+      <input type="text" placeholder="name" />
+      <button type="submit">Submit</button>
+    </form>
   );
 }
 
